@@ -1,15 +1,10 @@
-<?php
 
-session_start(); // start session
-?>
-//START User Verification
+{{-- start session --}}
 
 
+{{-- Include main NAV --}}
 
-
-
-    //Include main NAV
-    @include
+  @include('includes.head')
 
 
      
@@ -52,10 +47,8 @@ session_start(); // start session
 
 
 
-  <?php
-    //Include main NAV
-    include_once 'includes/nav.inc.php';
-  ?>
+
+      @include('includes.nav')  
 
 
 <div class="content text-center">
@@ -118,9 +111,5 @@ session_start(); // start session
     
  </div>
 
+@include('includes.footer')
 
-
-<?php
-    //Include main NAV
-    include_once 'includes/footer.inc.php';
-  ?>
