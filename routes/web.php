@@ -31,3 +31,10 @@ Route::get('/home', function () {
 Route::get('/dash', function () {
     return view('dash/index');
 });
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
